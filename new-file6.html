@@ -73,16 +73,16 @@
             <label for="email">Email</label>
             <input type="email" placeholder="Eg- jethaji.gada@gokuldham.com" name="email" required>
             <label for="Address">Addresss</label>
-            <input type="address" placeholder="Eg- 69-F, Goregaon east 564-Q" name="Address" required>
+            <input type="address" placeholder="Eg- 69-F, Goregaon east 564-Q" name="Address" maxlength="20" required>
                <label for="password">Coupon Code</label><br>
-            <input id="myInput" type="password" placeholder="NEWUSER70" name="Coupon">
+            <input id="myInput" type="password" placeholder="NEWUSER70" name="Coupon" maxlength="6">
            <a id="button" title="Applied!">Apply</a><br>
            <label for="text">City</label>
             <input type="text" placeholder="Udaipur" name="City" required>
             <label for="text">State</label>
             <input type="text" placeholder="Rajasthan" name="State" required>
-            <label for="text">Pincode</label>
-            <input type="text" placeholder="324876" name="Pincode" required>
+            <label for="number">Pincode</label>
+            <input type="number" placeholder="324876" name="Pincode" required maxlength="6">
            <br><a href="new-file7.html" ><button id="buttont">Order Now!</button></a>
                 </form>
                 </div>
@@ -136,7 +136,8 @@ input[type=password] {
   border: 3;
   background: #f1f1f1;
 }
-input[type=text] {
+
+input[type=text], input[type=number] {
   width: 22%;
   padding: 14px;
   margin: 7px 0 18px 0;
